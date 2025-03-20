@@ -1,0 +1,49 @@
+{
+  "compilerOptions": {
+    "target": "ES2017",
+    "lib": ["dom", "dom.iterable", "esnext"],
+    "allowJs": true,
+    "skipLibCheck": true,
+    "strict": true,
+    "noEmit": true,
+    "esModuleInterop": true,
+    "module": "esnext",
+    "moduleResolution": "bundler",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "jsx": "preserve",
+    "incremental": true,
+    "noImplicitAny": true, // Disallow variables with an implicit 'any' type
+    "noUnusedLocals": true, // Warn about unused local variables
+    "noUnusedParameters": true, // Warn about unused function parameters
+    "noFallthroughCasesInSwitch": true, // Prevent fall-through behavior in switch statements
+    "noImplicitReturns": true, // Ensure that every function has an explicit return type, avoiding potential mistakes
+    "noImplicitThis": true, // Ensure that `this` is always typed explicitly
+    "strictNullChecks": true, // Enforce stricter null checks, preventing runtime errors
+    "alwaysStrict": true, // Ensure all files are in strict mode by default
+    "strictFunctionTypes": true, // Ensure function arguments are checked for subtyping
+    "noPropertyAccessFromIndexSignature": false, // Prevent using `any` or untyped properties from an index signature
+    "noUncheckedIndexedAccess": true, // Enforce stricter checks when accessing array elements or object properties
+    "useUnknownInCatchVariables": true, // Prevent `any` in `catch` blocks (replace with `unknown`)
+    "skipDefaultLibCheck": true, // Skip checking `default` libraries in large projects
+    "outDir": "./dist", // Specify the output directory for compiled files
+    "declaration": true, // Generate type declaration files (.d.ts)
+    "declarationMap": true, // Generate source maps for the declaration files
+    "downlevelIteration": true, // Support for `for...of` and other ES6 iteration features in older environments
+    "forceConsistentCasingInFileNames": true, // Enforce case-sensitive file name checks (important for cross-platform consistency)
+    "baseUrl": ".", // Base directory for resolving non-relative imports
+    "plugins": [
+      {
+        "name": "next"
+      }
+    ],
+    "paths": {
+      "@/*": ["./src/*"],
+      "@components/*": ["components/*"],
+      "@utils/*": ["utils/*"],
+      "@types/*": ["types/*"]
+    }
+  },
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts"],
+  "exclude": ["node_modules"]
+}

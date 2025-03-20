@@ -1,0 +1,218 @@
+$font-size: 14px;
+$font-weight: 500;
+$hover-weight: 600;
+$text-type: uppercase;
+// main header bg after scroll effect if scroll based theme change is applied
+$header-background: var(--primary-color);
+$menu-primary-text-color: var(--white-color);
+//initial header bg before scroll if scroll based theme change is applied
+$scroll-header-background: var(--secondary-color);
+$scroll-menu-primary-text-color: #000;
+//nested menu style
+$submenu-text-color: var(--secondary-color);
+$submenu-bg-color: var(--white-color);
+//header menu item text spacing
+$letter-spacing: 0.05em;
+
+.header {
+  background: $header-background;
+  padding: 10px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: fixed;
+  top: 0px;
+  width: 100%;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  max-width: 1200px;
+  margin: auto;
+  justify-content: space-between;
+}
+
+.logo a {
+  font-size: 24px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #333;
+}
+
+.nav {
+  display: flex;
+  margin-left: auto; /* Push menu to the right */
+}
+
+.menu {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+  align-items: center;
+}
+
+.menu a {
+  text-decoration: none;
+  color: $menu-primary-text-color;
+  font-size: $font-size;
+  font-weight: $font-weight;
+  text-transform: $text-type;
+  letter-spacing: $letter-spacing;
+}
+
+.dropdown:hover .dropdownMenu {
+  display: block;
+}
+
+.mobileMenuButton {
+  display: none;
+  background: none;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+  margin-left: 20px;
+  color: $menu-primary-text-color;
+}
+
+@media (max-width: 768px) {
+  .mobileMenuButton {
+    display: block;
+  }
+
+  .nav {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 52px;
+    width: 100%;
+    left: 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 10px 0;
+  }
+
+  .nav.show {
+    display: flex;
+  }
+
+  .menu {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px 20px 0px 20px;
+  }
+
+  .dropdown.open .dropdownMenu {
+    display: block;
+  }
+}
+
+.dropdownToggle {
+  display: inline-flex;
+  align-items: center; /* Align text and icon */
+  gap: 5px; /* Space between text and icon */
+  cursor: pointer;
+  background: none; /* Removes button background */
+  border: none; /* Removes button border */
+  color: $menu-primary-text-color;
+  font-size: $font-size;
+  font-weight: $font-weight;
+  transition: font-weight 0.2s ease-in-out;
+  text-transform: $text-type;
+  font-family: var(--font-family);
+  letter-spacing: $letter-spacing;
+}
+
+@media (max-width: 769px) {
+  .dropdownToggle,
+  .menu a {
+    color: $submenu-text-color;
+  }
+}
+
+.dropdownToggle:focus {
+  outline: none;
+}
+
+/* HOVER EFFECT (Only on Desktop) */
+@media (min-width: 769px) {
+  .dropdownToggle:hover {
+    font-weight: $hover-weight;
+  }
+  .dropdownMenu {
+    box-shadow: none;
+    width: 100%;
+  }
+}
+
+@media (min-width: 769px) {
+  .menu a:hover {
+    font-weight: $hover-weight;
+  }
+}
+
+.dropdownMenu {
+  display: none;
+  position: absolute;
+  background: $submenu-bg-color;
+  list-style: none;
+  padding: 0px 10px 0px 20px;
+  li {
+    line-height: 25px;
+    a {
+      color: $submenu-text-color;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .menu {
+    li {
+      width: 100%;
+      button {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+    }
+  }
+
+  .dropdownMenu {
+    width: 100%;
+    position: relative;
+  }
+}
+@media (min-width: 769px) {
+  .dropdownMenu {
+    box-shadow: 0 10px 10px 0 rgb(48 51 50 / 9%);
+    padding: 16px;
+    margin-top: 5px;
+    max-width: 260px;
+    li {
+      padding: 0px !important;
+    }
+  }
+  .menu-divider {
+    display: none;
+  }
+  .menu li {
+    padding: 16px;
+  }
+}
+
+.m-top {
+  padding-top: 16px;
+}
+
+.scroll-theme {
+  .header {
+    background: $scroll-header-background;
+  }
+  .dropdownToggle,
+  .menu a {
+    color: $scroll-menu-primary-text-color;
+  }
+}

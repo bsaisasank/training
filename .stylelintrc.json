@@ -1,0 +1,44 @@
+{
+    "extends": [
+      "stylelint-config-standard",
+      "stylelint-config-prettier"
+    ],
+    "plugins": [
+      "stylelint-scss",
+      "stylelint-order"
+    ],
+    "rules": {
+      "indentation": 2,
+      "string-quotes": "double",
+      "color-hex-case": "lower",
+      "color-hex-length": "short",
+      "number-leading-zero": "always",
+      "block-no-empty": true,
+      "declaration-block-no-duplicate-properties": true,
+      "no-duplicate-selectors": true,
+      "max-nesting-depth": 3,
+      "selector-max-id": 0,
+      "no-empty-source": true,
+      "at-rule-no-unknown": true,
+      
+      "selector-class-pattern": "^[a-z][a-zA-Z0-9-]+$",
+      "selector-id-pattern": "^[a-z][a-zA-Z0-9-]+$",
+      
+      "order/properties-alphabetical-order": true,
+  
+      "tailwindcss/no-custom-classname": "warn",
+  
+      "selector-pseudo-element-colon-notation": "double",
+      "declaration-colon-space-after": "always",
+      "declaration-block-trailing-semicolon": "always",
+      "selector-list-comma-newline-after": "always",
+      "unit-allowed-list": ["em", "rem", "%", "s", "px", "vw", "vh"],
+  
+      "scss/dollar-variable-pattern": "^([a-z]+[a-zA-Z0-9]*)$",
+      "scss/at-mixin-pattern": "^([a-z]+[a-zA-Z0-9]*)$",
+      "scss/at-function-pattern": "^([a-z]+[a-zA-Z0-9]*)$",
+      "scss/at-extend-no-missing-placeholder": true,
+      "scss/dollar-variable-default": true
+    }
+  }
+  
