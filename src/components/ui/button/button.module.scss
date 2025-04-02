@@ -111,6 +111,66 @@
     }
   }
 
+  &.link {
+    background-color: transparent;
+    border: none;
+    padding: 0;
+    font-size: inherit;
+    font-family: inherit;
+    cursor: pointer;
+    text-decoration: none; /* Ensure no underline */
+    color: inherit; /* Use inherited color */
+    transition: color 0.3s ease;
+
+    &.primary {
+      color: var(--primary-color);
+
+      &:hover {
+        color: var(--secondary-color);
+      }
+    }
+
+    &.secondary {
+      color: var(--secondary-color);
+
+      &:hover {
+        color: var(--primary-color);
+      }
+    }
+
+    &.success {
+      color: var(--success-color);
+
+      &:hover {
+        color: var(--primary-color);
+      }
+    }
+
+    &.warning {
+      color: var(--warning-color);
+
+      &:hover {
+        color: var(--primary-color);
+      }
+    }
+
+    &.danger {
+      color: var(--danger-color);
+
+      &:hover {
+        color: var(--primary-color);
+      }
+    }
+
+    &.info {
+      color: var(--info-color);
+
+      &:hover {
+        color: var(--primary-color);
+      }
+    }
+  }
+
   &:hover {
     opacity: 0.9;
   }
