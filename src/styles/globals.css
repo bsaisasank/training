@@ -5,6 +5,12 @@
   --white-color: #ffffff;
   --border-radius: 8px;
   font-family: Poppins, sans-serif;
+
+  /* Added color variables */
+  --success-color: #28a745;
+  --warning-color: #ffc107;
+  --danger-color: #dc3545;
+  --info-color: #17a2b8;
 }
 
 html{
