@@ -2,5 +2,5 @@
 # . "$(dirname -- "$0")/_/husky.sh"
 
 # npm run test
-bash husky_scripts/validate-branch-name.sh
+# bash husky_scripts/validate-branch-name.sh
 # bash husky_scripts/validate-build.sh

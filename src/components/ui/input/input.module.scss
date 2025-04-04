@@ -1,0 +1,47 @@
+.inputContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  margin-bottom: 15px;
+}
+
+.heading {
+  font-size: 16px;
+  font-weight: bold;
+  color: var(--secondary-color);
+}
+
+.label {
+  font-size: 14px;
+  font-weight: bold;
+  color: var(--secondary-color);
+}
+
+.input {
+  padding: 10px;
+  font-size: 14px;
+  border: 1px solid var(--input-border-color);
+  border-radius: var(--border-radius);
+  outline: none;
+  transition: border-color 0.3s ease;
+
+  &:focus {
+    border-color: var(--input-border-color-focus);
+  }
+
+  &.danger {
+    border-color: var(--input-border-color-danger); /* Danger mode border color */
+  }
+
+  &.disabled {
+    background-color: var(--input-background-disabled); /* Disabled background */
+    border-color: var(--input-border-color-disabled); /* Disabled border */
+    color: var(--input-text-color-disabled); /* Disabled text */
+    cursor: not-allowed; /* Change cursor to indicate disabled state */
+  }
+}
+
+.helperText {
+  font-size: 12px;
+  color: var(--input-helper-text-color-danger); /* Danger mode text color */
+}
