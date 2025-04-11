@@ -5,12 +5,22 @@
   --white-color: #ffffff;
   --border-radius: 8px;
   font-family: Poppins, sans-serif;
+  --text-color: #000000;
 
   /* Added color variables */
   --success-color: #28a745;
   --warning-color: #ffc107;
   --danger-color: #dc3545;
   --info-color: #17a2b8;
+
+  /* Typography font sizes */
+  --font-size-h1: 2.5rem;
+  --font-size-h2: 2rem;
+  --font-size-h3: 1.75rem;
+  --font-size-h4: 1.5rem;
+  --font-size-h5: 1.25rem;
+  --font-size-h6: 1rem;
+  --font-size-body: 1rem;
 
   /* Input-specific variables */
   --input-border-color: var(--primary-color);
@@ -22,16 +32,17 @@
   --input-helper-text-color-danger: var(--danger-color);
 }
 
-html{
+html {
   scroll-behavior: smooth;
 }
 
 body {
-  font-family: Popins, sans-serif;
+  font-family: Poppins, sans-serif;
   overflow-x: hidden;
   display: flex;
   flex-direction: column;
   min-height: 100vh;
+  color: var(--text-color);
 }
 
 .layout-container {
@@ -65,3 +76,4 @@ footer {
 .d-none {
   display: none;
 }
+

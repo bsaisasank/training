@@ -1,0 +1,61 @@
+/* Default styles for typography */
+.typography {
+  color: var(--custom-color); /* Use dynamic color */
+  font-family: var(--custom-font-family); /* Use dynamic font-family */
+  font-size: var(--custom-font-size); /* Use dynamic font-size */
+  margin: 0;
+}
+
+/* Specific styles for each component */
+.h1 {
+  font-size: var(--font-size-h1);
+}
+
+.h2 {
+  font-size: var(--font-size-h2);
+}
+
+.h3 {
+  font-size: var(--font-size-h3);
+}
+
+.h4 {
+  font-size: var(--font-size-h4);
+}
+
+.h5 {
+  font-size: var(--font-size-h5);
+}
+
+.h6 {
+  font-size: var(--font-size-h6);
+}
+
+.body {
+  font-size: var(--font-size-body);
+}
+
+/* Variant styles */
+.primary {
+  color: var(--primary-color);
+}
+
+.secondary {
+  color: var(--secondary-color);
+}
+
+.success {
+  color: var(--success-color);
+}
+
+.warning {
+  color: var(--warning-color);
+}
+
+.danger {
+  color: var(--danger-color);
+}
+
+.info {
+  color: var(--info-color);
+}
