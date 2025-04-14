@@ -1,4 +1,5 @@
-import { Button } from '@/components/ui/button';
+// import { Button } from '@/components/ui/button';
+import { TypographyExample } from '@/components/ui/typography/example';
 import styles from './page.module.css';
 
 export default function Home() {
@@ -30,7 +31,7 @@ export default function Home() {
       <br />
       <br />
       ha
-      <Button/>
+      <TypographyExample/>
     </div>
   );
 }
