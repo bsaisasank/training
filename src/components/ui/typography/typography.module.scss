@@ -6,33 +6,44 @@
   margin: 0;
 }
 
+.part {
+  margin-right: 4px; /* Add spacing between parts */
+}
+
 /* Specific styles for each component */
 .h1 {
   font-size: var(--font-size-h1);
+  font-weight: var(--font-weight-h1); /* Use font-weight variable */
 }
 
 .h2 {
   font-size: var(--font-size-h2);
+  font-weight: var(--font-weight-h2); /* Use font-weight variable */
 }
 
 .h3 {
   font-size: var(--font-size-h3);
+  font-weight: var(--font-weight-h3); /* Use font-weight variable */
 }
 
 .h4 {
   font-size: var(--font-size-h4);
+  font-weight: var(--font-weight-h4); /* Use font-weight variable */
 }
 
 .h5 {
   font-size: var(--font-size-h5);
+  font-weight: var(--font-weight-h5); /* Use font-weight variable */
 }
 
 .h6 {
   font-size: var(--font-size-h6);
+  font-weight: var(--font-weight-h6); /* Use font-weight variable */
 }
 
 .body {
   font-size: var(--font-size-body);
+  font-weight: var(--font-weight-body); /* Use font-weight variable */
 }
 
 /* Variant styles */

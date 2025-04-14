@@ -22,6 +22,15 @@
   --font-size-h6: 1rem;
   --font-size-body: 1rem;
 
+  /* Typography font weights */
+  --font-weight-h1: 700; /* Bold */
+  --font-weight-h2: 600; /* Semi-bold */
+  --font-weight-h3: 500; /* Medium */
+  --font-weight-h4: 500; /* Medium */
+  --font-weight-h5: 400; /* Regular */
+  --font-weight-h6: 400; /* Regular */
+  --font-weight-body: 400; /* Regular */
+
   /* Input-specific variables */
   --input-border-color: var(--primary-color);
   --input-border-color-focus: var(--success-color);
