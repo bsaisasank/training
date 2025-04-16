@@ -4,7 +4,7 @@
   --secondary-color: #000000;
   --white-color: #ffffff;
   --border-radius: 8px;
-  font-family: Poppins, sans-serif;
+  --font-family: Poppins, sans-serif;
   --text-color: #000000;
 
   /* Added color variables */
@@ -46,7 +46,7 @@ html {
 }
 
 body {
-  font-family: Poppins, sans-serif;
+  font-family: var(--font-family);
   overflow-x: hidden;
   display: flex;
   flex-direction: column;
